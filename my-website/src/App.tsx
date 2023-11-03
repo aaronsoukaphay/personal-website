@@ -1,12 +1,16 @@
-import './App.css'
+import "./App.css";
+import Header from "./Header";
+import Home from "./Home";
+import Footer from "./Footer";
 
 function App() {
-
   return (
     <>
-      <h1 className='border border-white;'>Aaron Soukaphay</h1>
+      <Header />
+      <Home />
+      <Footer />
     </>
-  )
+  );
 }
 
-export default App
+export default App;
