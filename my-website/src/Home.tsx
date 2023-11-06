@@ -11,7 +11,7 @@ export default function Home() {
   };
   return (
     <div>
-      <h1 className="text-center text-7xl">
+      <h1 className="text-center text-7xl py-3">
         Aaron Soukaphay:{" "}
         <span style={{ color: "white", fontWeight: "bold" }}>
           {/* Style will be inherited from the parent element */}
