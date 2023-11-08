@@ -1,6 +1,6 @@
 export default function About() {
   return (
-    <div>
+    <div className="py-3">
       <h1 className="text-center text-2xl">About Me</h1>
       <h1 className="text-xl">
         I'm a recent graduate from the University of California, Irvine, with a
