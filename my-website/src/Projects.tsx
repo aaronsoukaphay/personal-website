@@ -4,7 +4,7 @@ export default function Projects() {
       <h1 className="text-center text-2xl">My Projects</h1>
       <p className="text-center">Here are some projects I've worked on.</p>
       <div className="flex justify-between">
-        <div className="border border-white">
+        <div className="border border-white bg-medgrey rounded-lg">
           <div className="p-4">
             <img src="/images/touchdown-threads.png" />
             <div className="text-2xl">Touchdown Threads</div>
@@ -15,12 +15,14 @@ export default function Projects() {
             <div className="text-center flex justify-evenly">
               <a
                 href="http://final-project-dev.us-west-1.elasticbeanstalk.com/"
+                target="_blank"
                 className="hover:text-blue-500"
               >
                 Live
               </a>
               <a
                 href="https://github.com/aaronsoukaphay/touchdown-threads"
+                target="_blank"
                 className="hover:text-blue-500"
               >
                 Repo
