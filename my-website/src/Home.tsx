@@ -13,7 +13,7 @@ export default function Home() {
     <div>
       <h1 className="text-center text-7xl py-3">
         Aaron Soukaphay:{" "}
-        <span style={{ color: "white", fontWeight: "bold" }}>
+        <span style={{ color: "#66D9ED", fontWeight: "bold" }}>
           {/* Style will be inherited from the parent element */}
           <Typewriter
             words={["Frontend", "Backend", "Fullstack"]}

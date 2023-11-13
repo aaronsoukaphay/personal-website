@@ -6,8 +6,11 @@ export default {
     colors: {
       tan: "#DDDBDE",
       lightgrey: "#CAD4DF",
-      medgrey: "#656E77",
+      medgrey: "#212024",
       darkgrey: "#3B373B",
+      blue: "#66D9ED",
+      background: "#1B191D",
+      purple: "#BB76FF",
     },
   },
   plugins: [],
