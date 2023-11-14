@@ -9,7 +9,11 @@ export default function Header() {
           </div>
           <div className="flex">
             {headings.map((heading, i) => (
-              <a key={i} className="uppercase px-1 hover:text-blue" href="#">
+              <a
+                key={i}
+                className="uppercase px-1 hover:text-blue"
+                href={`#${heading}`}
+              >
                 {heading}
               </a>
             ))}

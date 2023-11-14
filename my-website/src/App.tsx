@@ -10,11 +10,19 @@ function App() {
     <>
       <Header />
       <div className="md: container md: mx-auto">
-        <Home />
-        <About />
-        <Projects />
+        <section id="home">
+          <Home />
+        </section>
+        <section id="about">
+          <About />
+        </section>
+        <section id="projects">
+          <Projects />
+        </section>
       </div>
-      <Footer />
+      <section id="contact">
+        <Footer />
+      </section>
     </>
   );
 }
