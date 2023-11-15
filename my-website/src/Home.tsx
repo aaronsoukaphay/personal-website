@@ -11,7 +11,8 @@ export default function Home() {
   };
   return (
     <div>
-      <h1 className="text-center text-7xl py-3">
+      {/* <img src="/images/home-background.jpg" className="absolute" /> */}
+      <h1 className="text-center text-7xl py-3 ">
         Aaron Soukaphay:{" "}
         <span style={{ color: "#66D9ED", fontWeight: "bold" }}>
           {/* Style will be inherited from the parent element */}

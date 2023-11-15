@@ -10,8 +10,13 @@ function App() {
     <>
       <Header />
       <div className="md: container md: mx-auto">
-        <section id="home">
-          <Home />
+        <section id="home" className="h-screen">
+          <div
+            style={{ backgroundImage: "url(/images/home-background.jpg)" }}
+            className="h-screen"
+          >
+            <Home />
+          </div>
         </section>
         <section id="about">
           <About />
