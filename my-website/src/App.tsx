@@ -9,13 +9,8 @@ function App() {
   return (
     <>
       <Header />
-      <section id="home" className="h-screen">
-        <div
-          style={{ backgroundImage: "url(/images/home-background.jpg)" }}
-          className="h-screen flex justify-center items-center"
-        >
-          <Home />
-        </div>
+      <section id="home">
+        <Home />
       </section>
       <div className="md: container md: mx-auto">
         <section id="about">

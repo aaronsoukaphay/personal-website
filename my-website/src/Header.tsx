@@ -1,7 +1,7 @@
 export default function Header() {
   const headings = ["home", "about", "projects", "contact"];
   return (
-    <div className="py-6">
+    <header className="py-6 bg-medgrey fixed w-screen">
       <div className="md:container md:mx-auto">
         <div className="flex justify-between">
           <div>
@@ -20,6 +20,6 @@ export default function Header() {
           </div>
         </div>
       </div>
-    </div>
+    </header>
   );
 }
