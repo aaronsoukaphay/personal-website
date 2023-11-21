@@ -12,7 +12,9 @@ export default function Home() {
   return (
     <div className="h-screen">
       <div
-        style={{ backgroundImage: "url(/images/home-background.jpg)" }}
+        // style={{
+        //   backgroundImage: "url(/images/background.jpg)",
+        // }}
         className="h-screen flex justify-center items-center"
       >
         {/* <img src="/images/home-background.jpg" className="absolute" /> */}

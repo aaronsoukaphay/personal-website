@@ -11,6 +11,8 @@ export default {
       blue: "#66D9ED",
       background: "#1B191D",
       purple: "#BB76FF",
+      white: "white",
+      black: "black",
     },
   },
   plugins: [],
