@@ -11,7 +11,7 @@ export default function Header() {
             {headings.map((heading, i) => (
               <a
                 key={i}
-                className="uppercase text-xl hover:text-blue"
+                className="uppercase text-xl hover:text-blue font-bold"
                 href={`#${heading}`}
               >
                 {heading}
