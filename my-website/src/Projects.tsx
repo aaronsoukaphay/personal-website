@@ -28,9 +28,12 @@ export default function Projects() {
   ];
 
   return (
-    <div>
-      <h1 className="text-center text-2xl">My Projects</h1>
-      <p className="text-center mb-5">Here are some projects I've worked on.</p>
+    <div className="h-screen">
+      <h1 className="text-center text-4xl pb-6">PROJECTS</h1>
+      <p className="text-center mb-5">
+        Here you will find some of the personal and clients projects that I
+        created with each project containing its own case study
+      </p>
       <div className="flex flex-wrap justify-center gap-3">
         {projects.map((project) => (
           <div className="bg-medgrey rounded basis-2/5">

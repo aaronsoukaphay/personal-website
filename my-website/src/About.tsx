@@ -59,7 +59,12 @@ export default function About() {
   ];
 
   return (
-    <div className="h-screen flex items-center">
+    <div className="h-screen">
+      <div className="text-center text-4xl pb-6">ABOUT ME</div>
+      <p className="text-center mb-5">
+        Here you will find more information about me, what I do, and my current
+        skills mostly in terms of programming and technology
+      </p>
       <div className="flex gap-5">
         <div className="basis-1/2">
           <div className="text-2xl pb-4">Get to know me!</div>
