@@ -1,3 +1,5 @@
+import { motion } from "framer-motion";
+
 export default function About() {
   const skills = [
     {
@@ -81,12 +83,16 @@ export default function About() {
           <div className="text-2xl pb-4">My Skills</div>
           <div className="flex flex-wrap gap-1">
             {skills.map((skill) => (
-              <div className="bg-white text-black rounded px-4 py-2 xl:basis-1/6 md:basis-1/5 sm:basis-1/2">
+              <motion.div
+                initial={{ opacity: 0 }}
+                whileInView={{ opacity: 1 }}
+                className="bg-white text-black rounded px-4 py-2 xl:basis-1/6 md:basis-1/5 sm:basis-1/2"
+              >
                 <div className="flex justify-center">
                   <img src={skill.img} />
                 </div>
                 <h1 className="text-center">{skill.name}</h1>
-              </div>
+              </motion.div>
             ))}
           </div>
         </div>

@@ -19,7 +19,6 @@ export default function Home() {
       >
         {/* <img src="/images/home-background.jpg" className="absolute" /> */}
         <h1 className="text-center text-7xl py-3 ">
-          Aaron Soukaphay:{" "}
           <span style={{ color: "#66D9ED", fontWeight: "bold" }}>
             {/* Style will be inherited from the parent element */}
             <Typewriter
@@ -28,7 +27,7 @@ export default function Home() {
               cursor
               cursorStyle="|"
               typeSpeed={70}
-              deleteSpeed={50}
+              deleteSpeed={100}
               delaySpeed={1000}
               onLoopDone={handleDone}
               onType={handleType}
