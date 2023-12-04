@@ -10,7 +10,7 @@ export default function Home() {
     console.log(`Done after 5 loops!`);
   };
   return (
-    <div className="h-screen">
+    <div className="h-screen font-mono">
       <div
         // style={{
         //   backgroundImage: "url(/images/background.jpg)",
@@ -19,7 +19,7 @@ export default function Home() {
       >
         {/* <img src="/images/home-background.jpg" className="absolute" /> */}
         <h1 className="text-center text-7xl py-3 ">
-          <span style={{ color: "#66D9ED", fontWeight: "bold" }}>
+          <span style={{ color: "#66D9ED", fontWeight: "" }}>
             {/* Style will be inherited from the parent element */}
             <Typewriter
               words={["Frontend", "Backend", "Fullstack"]}

@@ -44,7 +44,7 @@ export default function About() {
     },
     {
       name: "Framer Motion",
-      img: "/images/icons/html.svg",
+      img: "/images/icons/framer-motion.svg",
     },
     {
       name: "VS Code",
@@ -58,10 +58,34 @@ export default function About() {
       name: "GitHub",
       img: "/images/icons/github.svg",
     },
+    {
+      name: "Figma",
+      img: "/images/icons/figma.svg",
+    },
   ];
 
+  const container = {
+    hidden: { opacity: 1, scale: 0 },
+    visible: {
+      opacity: 1,
+      scale: 1,
+      transition: {
+        delayChildren: 0.3,
+        staggerChildren: 0.1,
+      },
+    },
+  };
+
+  const item = {
+    hidden: { y: 20, opacity: 0 },
+    visible: {
+      y: 0,
+      opacity: 1,
+    },
+  };
+
   return (
-    <div className="h-screen">
+    <div className="h-screen font-mono">
       <div className="text-center text-4xl pb-6">ABOUT ME</div>
       <p className="text-center mb-5">
         Here you will find more information about me, what I do, and my current
@@ -81,20 +105,25 @@ export default function About() {
         </div>
         <div className="basis-1/2">
           <div className="text-2xl pb-4">My Skills</div>
-          <div className="flex flex-wrap gap-1">
-            {skills.map((skill) => (
+          <motion.div
+            className="flex flex-wrap gap-1"
+            variants={container}
+            initial="hidden"
+            whileInView="visible"
+          >
+            {skills.map((skill, index) => (
               <motion.div
-                initial={{ opacity: 0 }}
-                whileInView={{ opacity: 1 }}
+                variants={item}
+                key={index}
                 className="bg-white text-black rounded px-4 py-2 xl:basis-1/6 md:basis-1/5 sm:basis-1/2"
               >
                 <div className="flex justify-center">
-                  <img src={skill.img} />
+                  <img src={skill.img} width="80%" />
                 </div>
                 <h1 className="text-center">{skill.name}</h1>
               </motion.div>
             ))}
-          </div>
+          </motion.div>
         </div>
       </div>
     </div>

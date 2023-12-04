@@ -34,17 +34,17 @@ export default function Projects() {
         Here you will find some of the personal and clients projects that I
         created with each project containing its own case study
       </p>
-      <div className="flex flex-wrap justify-center gap-3">
+      <div className="flex flex-wrap gap-5">
         {projects.map((project) => (
-          <div className="bg-medgrey rounded basis-2/5">
-            <div className="flex justify-center bg-contain">
+          <div className="bg-medgrey rounded basis-1/3">
+            <div className="flex justify-center">
               <img
                 src={project.image}
-                className="rounded-t object-cover h-96 w-full"
+                className="rounded-t object-cover h-72 w-full"
               />
             </div>
-            <div className="p-5">
-              <div className="text-2xl py-3">{project.title}</div>
+            <div className="px-5">
+              <div className="text-2xl py-3 font-semibold">{project.title}</div>
               <div>{project.description}</div>
               <div className="flex flex-wrap gap-3 py-3">
                 {project.technologies.map((lang: string) => (

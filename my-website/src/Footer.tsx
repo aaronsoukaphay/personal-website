@@ -12,14 +12,14 @@ export default function Footer() {
           href="https://www.linkedin.com/in/aaron-soukaphay/"
           target="_blank"
         >
-          <BsLinkedin size={30} />
+          <BsLinkedin size={35} />
         </a>
         <a
           className="px-2 hover:text-blue"
           href="https://github.com/aaronsoukaphay"
           target="_blank"
         >
-          <BsGithub size={30} />
+          <BsGithub size={35} />
         </a>
       </div>
     </div>
