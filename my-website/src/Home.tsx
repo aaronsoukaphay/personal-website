@@ -10,15 +10,10 @@ export default function Home() {
     console.log(`Done after 5 loops!`);
   };
   return (
-    <div className="h-screen font-mono">
-      <div
-        // style={{
-        //   backgroundImage: "url(/images/background.jpg)",
-        // }}
-        className="h-screen flex justify-center items-center"
-      >
-        {/* <img src="/images/home-background.jpg" className="absolute" /> */}
-        <h1 className="text-center text-7xl py-3 ">
+    <div className="h-screen font-mono flex justify-center items-center">
+      <div>
+        <div className="text-center text-7xl">AARON SOUKAPHAY</div>
+        <h1 className="text-center text-3xl py-3 ">
           <span style={{ color: "#66D9ED", fontWeight: "" }}>
             {/* Style will be inherited from the parent element */}
             <Typewriter
@@ -35,6 +30,14 @@ export default function Home() {
           </span>
           {""}Developer
         </h1>
+        <div className="text-center my-4">
+          <a href="#projects" className="border rounded py-3 px-3 text-xl mx-3">
+            Projects
+          </a>
+          <a href="#contact" className="border rounded py-3 px-3 text-xl mx-3">
+            Contact
+          </a>
+        </div>
       </div>
     </div>
   );

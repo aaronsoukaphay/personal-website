@@ -25,6 +25,21 @@ export default function Projects() {
       live: "http://final-project-dev.us-west-1.elasticbeanstalk.com/",
       repo: "https://github.com/aaronsoukaphay/touchdown-threads",
     },
+    {
+      title: "Portfolio Website",
+      description:
+        "A frontend web application to showcase my skills and projects.",
+      technologies: [
+        "TypeScript",
+        "React.js",
+        "Tailwind CSS",
+        "Framer Motion",
+        "GitHub Pages",
+      ],
+      image: "/images/touchdown-threads.png",
+      live: "http://final-project-dev.us-west-1.elasticbeanstalk.com/",
+      repo: "https://github.com/aaronsoukaphay/touchdown-threads",
+    },
   ];
 
   return (
@@ -34,9 +49,9 @@ export default function Projects() {
         Here you will find some of the personal and clients projects that I
         created with each project containing its own case study
       </p>
-      <div className="flex flex-wrap gap-5">
+      <div className="flex flex-wrap gap-5 justify-center">
         {projects.map((project) => (
-          <div className="bg-medgrey rounded basis-1/3">
+          <div className="bg-medgrey rounded project">
             <div className="flex justify-center">
               <img
                 src={project.image}
