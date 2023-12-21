@@ -9,12 +9,20 @@ function App() {
   return (
     <>
       <Header />
-      <div className="md: container md: mx-auto">
+      <section id="home">
         <Home />
-        <About />
-        <Projects />
+      </section>
+      <div className="md: container md: mx-auto">
+        <section id="about" className="scroll-m-32">
+          <About />
+        </section>
+        <section id="projects" className="scroll-m-32">
+          <Projects />
+        </section>
       </div>
-      <Footer />
+      <section id="contact">
+        <Footer />
+      </section>
     </>
   );
 }
