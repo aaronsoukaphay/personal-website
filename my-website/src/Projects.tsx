@@ -36,9 +36,9 @@ export default function Projects() {
         "Framer Motion",
         "GitHub Pages",
       ],
-      image: "/images/touchdown-threads.png",
-      live: "http://final-project-dev.us-west-1.elasticbeanstalk.com/",
-      repo: "https://github.com/aaronsoukaphay/touchdown-threads",
+      image: "/images/portfolio-website.png",
+      live: "https://main.d2nummp4lg6vcy.amplifyapp.com/#projects",
+      repo: "https://github.com/aaronsoukaphay/personal-website",
     },
   ];
 
