@@ -85,37 +85,49 @@ export default function About() {
   };
 
   return (
-    <div className="h-screen font-mono">
+    <div className="font-mono">
       <div className="text-center text-4xl pb-6">ABOUT ME</div>
-      <p className="text-center mb-5">
-        Here you will find more information about me, what I do, and my current
-        skills mostly in terms of programming and technology
-      </p>
-      <div className="flex gap-5">
-        <div className="basis-1/2">
-          <div className="text-2xl pb-4">Get to know me!</div>
-          <div className="text-xl">
-            Hello! My journey began in the healthcare industry, but my true
-            passion lies in the dynamic world of web development. Holding a
-            degree in science has instilled in me a strong foundation in
-            research, critical thinking, and problem-solving. This background,
-            combined with my background in web development, brings a unique
-            perspective to my work.
+      <div className="flex flex-wrap pt-6 justify-center">
+        <div className="basis-full xl:basis-1/2 px-5">
+          <div className="text-2xl pb-4 text-center xl:text-start">
+            Get to know me!
+          </div>
+          <div className="text-sm xl:text-lg text-center xl:text-start">
+            Hello! My professional journey began in the healthcare industry but
+            my true passion lies in the dynamic world of web development.
+            Holding a degree in science has instilled in me a strong foundation
+            in research, critical thinking, and problem-solving.
+            <br />
+            <br />
+            This unique synthesis allows me to approach projects with a holistic
+            mindset, understanding not only the technical intricacies but also
+            the human-centric aspects that make a digital experience truly
+            impactful. I believe in crafting solutions that blend functionality
+            with user empathy, ensuring a meaningful impact in the digital
+            landscape.
+            <br />
+            <br />
+            When I'm not coding I like to stay active by going to the gym and
+            playing sports like badminton, pickleball, and basketball. I also
+            enjoy watching movies and tv series as a way to undwind at the end
+            of the day.
           </div>
         </div>
-        <div className="basis-1/2">
-          <div className="text-2xl pb-4">My Skills</div>
+        <div className="basis-full xl:basis-1/2">
+          <div className="text-2xl pb-4 text-center xl:text-start">
+            My Skills
+          </div>
           <motion.div
-            className="flex flex-wrap gap-1"
+            className="flex flex-wrap justify-center xl:justify-start gap-1"
             variants={container}
-            initial="hidden"
+            initial="visible"
             whileInView="visible"
           >
             {skills.map((skill, index) => (
               <motion.div
                 variants={item}
                 key={index}
-                className="bg-white text-black rounded px-4 py-2 xl:basis-1/6 md:basis-1/5 sm:basis-1/2"
+                className="bg-white text-black rounded px-4 py-2 basis-1/2 md:basis-1/5 xl:basis-1/6"
               >
                 <div className="flex justify-center">
                   <img src={skill.img} width="80%" />
