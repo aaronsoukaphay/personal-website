@@ -13,10 +13,10 @@ function App() {
         <Home />
       </section>
       <div className="md: container md: mx-auto">
-        <section id="about" className="scroll-m-32">
+        <section id="about" className="scroll-m-24">
           <About />
         </section>
-        <section id="projects" className="scroll-m-32">
+        <section id="projects" className="scroll-m-24">
           <Projects />
         </section>
       </div>

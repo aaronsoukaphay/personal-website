@@ -85,7 +85,7 @@ export default function About() {
   };
 
   return (
-    <div className="font-mono">
+    <div className="font-mono h-screen">
       <div className="text-center text-4xl pb-6">ABOUT ME</div>
       <div className="flex flex-wrap pt-6 justify-center">
         <div className="basis-full xl:basis-1/2 px-5">
