@@ -34,7 +34,7 @@ export default function Projects() {
         "React.js",
         "Tailwind CSS",
         "Framer Motion",
-        "GitHub Pages",
+        "AWS Amplify",
       ],
       image: "/images/portfolio-website.png",
       live: "https://main.d2nummp4lg6vcy.amplifyapp.com/#projects",
