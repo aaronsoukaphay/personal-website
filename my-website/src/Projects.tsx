@@ -43,15 +43,15 @@ export default function Projects() {
   ];
 
   return (
-    <div className="h-screen">
+    <div className="min-h-screen mb-10">
       <h1 className="text-center text-4xl pb-6">PROJECTS</h1>
       <p className="text-center mb-5">
         Here you will find some of the personal and clients projects that I
-        created with each project containing its own case study
+        created with each project containing its own case study.
       </p>
       <div className="flex flex-wrap gap-5 justify-center">
         {projects.map((project) => (
-          <div className="bg-medgrey rounded project">
+          <div className="bg-medgrey rounded basis-10/12 xl:basis-1/3">
             <div className="flex justify-center">
               <img
                 src={project.image}

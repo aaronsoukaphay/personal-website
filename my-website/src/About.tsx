@@ -1,5 +1,3 @@
-import { motion } from "framer-motion";
-
 export default function About() {
   const skills = [
     {
@@ -62,33 +60,41 @@ export default function About() {
       name: "Figma",
       img: "/images/icons/figma.svg",
     },
+    {
+      name: "AWS",
+      img: "/images/icons/aws.svg",
+    },
+    {
+      name: "Vite",
+      img: "/images/icons/vite.svg",
+    },
+    {
+      name: "Canva",
+      img: "/images/icons/canva.svg",
+    },
+    {
+      name: "ESLint",
+      img: "/images/icons/eslint.svg",
+    },
+    {
+      name: "Docker",
+      img: "/images/icons/docker.svg",
+    },
+    {
+      name: "NPM",
+      img: "/images/icons/npm.svg",
+    },
+    {
+      name: "React Router",
+      img: "/images/icons/react-router.svg",
+    },
   ];
 
-  const container = {
-    hidden: { opacity: 1, scale: 0 },
-    visible: {
-      opacity: 1,
-      scale: 1,
-      transition: {
-        delayChildren: 0.3,
-        staggerChildren: 0.1,
-      },
-    },
-  };
-
-  const item = {
-    hidden: { y: 20, opacity: 0 },
-    visible: {
-      y: 0,
-      opacity: 1,
-    },
-  };
-
   return (
-    <div className="font-mono h-screen">
+    <div className="font-mono min-h-screen mb-10">
       <div className="text-center text-4xl pb-6">ABOUT ME</div>
-      <div className="flex flex-wrap pt-6 justify-center">
-        <div className="basis-full xl:basis-1/2 px-5">
+      <div className="flex flex-wrap justify-center">
+        <div className="basis-full xl:basis-1/2 px-5 pt-6">
           <div className="text-2xl pb-4 text-center xl:text-start">
             Get to know me!
           </div>
@@ -113,11 +119,24 @@ export default function About() {
             of the day.
           </div>
         </div>
-        <div className="basis-full xl:basis-1/2">
+        <div className="basis-full xl:basis-1/2 pt-6">
           <div className="text-2xl pb-4 text-center xl:text-start">
             My Skills
           </div>
-          <motion.div
+          <div className="flex flex-wrap justify-center xl:justify-start gap-1">
+            {skills.map((skill, index) => (
+              <div
+                key={index}
+                className="bg-white text-black rounded px-4 py-2 basis-1/2 md:basis-1/5 xl:basis-1/6"
+              >
+                <div className="flex justify-center">
+                  <img src={skill.img} width="80%" />
+                </div>
+                <h1 className="text-center">{skill.name}</h1>
+              </div>
+            ))}
+          </div>
+          {/* <motion.div
             className="flex flex-wrap justify-center xl:justify-start gap-1"
             variants={container}
             initial="visible"
@@ -135,7 +154,7 @@ export default function About() {
                 <h1 className="text-center">{skill.name}</h1>
               </motion.div>
             ))}
-          </motion.div>
+          </motion.div> */}
         </div>
       </div>
     </div>
