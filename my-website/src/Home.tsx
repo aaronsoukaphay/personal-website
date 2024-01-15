@@ -12,6 +12,11 @@ export default function Home() {
   return (
     <div className="h-screen font-mono flex justify-center items-center">
       <div>
+        <div className="flex justify-center pb-5">
+          <div className="w-64 h-64">
+            <img src="/images/profile-pic.JPEG" className="rounded-full" />
+          </div>
+        </div>
         <div className="text-center text-4xl xl:text-7xl">AARON SOUKAPHAY</div>
         <h1 className="text-center text-xl xl:text-3xl py-3 ">
           <span style={{ color: "#66D9ED", fontWeight: "" }}>
@@ -38,10 +43,11 @@ export default function Home() {
             Projects
           </a>
           <a
-            href="#contact"
+            href="/images/resume.pdf"
             className="border rounded py-3 px-3 text-md xl:text-xl mx-3"
+            target="_blank"
           >
-            Contact
+            Resume
           </a>
         </div>
       </div>

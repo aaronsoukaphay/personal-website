@@ -20,10 +20,13 @@ function MenuBar({ isOpen, tabs, header }) {
     <div className={className}>
       <h3 className="menu-heading text-black">{header}</h3>
       <ul className="menu-items text-black">
-        {tabs.map((tab, index) => (
-          <li key={index} className="menu-item" onClick={() => onClick(tab)}>
-            {tab}
-          </li>
+        {tabs.map((tab, index: number) => (
+          <a
+            key={index}
+            href={`#${tab.toLowerCase() === "home" ? "" : tab.toLowerCase()}`}
+          >
+            <li className="menu-item">{tab}</li>
+          </a>
         ))}
       </ul>
     </div>

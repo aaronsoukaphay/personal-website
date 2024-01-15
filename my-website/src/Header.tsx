@@ -6,24 +6,28 @@ export default function Header() {
   const header = ["Menu"];
 
   return (
-    <header className="py-5 w-screen font-mono">
+    <header className="py-5 font-mono">
       <div className="container mx-auto px-2">
-        <div className="flex justify-between items-center">
+        <div className="flex justify-center lg:justify-start items-center">
           <div>
-            <h3 className="text-lg lg:text-3xl text-blue">Aaron Soukaphay</h3>
+            <div className="flex border border-white text-2xl rounded-sm">
+              <div className="px-2 font-bold">AARON</div>
+              <div className="bg-white text-black px-2 font-bold">
+                SOUKAPHAY
+              </div>
+            </div>
           </div>
-          <div>
+          <div className="fixed right-6">
             <AppDrawer tabs={tabs} header={header} />
           </div>
         </div>
-        <div className="fixed top-4 left-1/2 -translate-x-1/2 bg-darkgrey bg-opacity-70 border-none rounded-full px-5 py-2">
+        <div className="fixed top-4 left-1/2 -translate-x-1/2 bg-darkgrey bg-opacity-70 border-none rounded-full px-5 py-2 hidden lg:block">
           <div className="flex gap-5">
-            {headings.map((heading, i) => (
-              <div>
-                <div className="text-end text-xs">{`0${i + 1}`}</div>
+            {headings.map((heading, index) => (
+              <div key={index}>
+                <div className="text-end text-xs">{`0${index + 1}`}</div>
                 //{" "}
                 <a
-                  key={i}
                   className="text-md hover:text-blue"
                   href={`#${heading === "home" ? "" : heading}`}
                 >

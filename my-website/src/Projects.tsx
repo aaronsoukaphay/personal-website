@@ -50,8 +50,11 @@ export default function Projects() {
         created with each project containing its own case study.
       </p>
       <div className="flex flex-wrap gap-5 justify-center">
-        {projects.map((project) => (
-          <div className="bg-medgrey rounded basis-10/12 xl:basis-1/3">
+        {projects.map((project, index) => (
+          <div
+            className="bg-medgrey rounded basis-10/12 xl:basis-1/3"
+            key={index}
+          >
             <div className="flex justify-center">
               <img
                 src={project.image}
@@ -62,8 +65,10 @@ export default function Projects() {
               <div className="text-2xl py-3 font-semibold">{project.title}</div>
               <div>{project.description}</div>
               <div className="flex flex-wrap gap-3 py-3">
-                {project.technologies.map((lang: string) => (
-                  <p className="border rounded-2xl py-1 px-2">{lang}</p>
+                {project.technologies.map((lang: string, index: number) => (
+                  <p className="border rounded-2xl py-1 px-2" key={index}>
+                    {lang}
+                  </p>
                 ))}
               </div>
               <div className="text-center flex justify-evenly py-4">
