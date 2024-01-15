@@ -13,7 +13,7 @@ export default function Home() {
     <div className="h-screen font-mono flex justify-center items-center">
       <div>
         <div className="flex justify-center pb-5">
-          <div className="w-64 h-64">
+          <div className="w-64 h-64 lg:w-96 lg:h-96">
             <img src="/images/profile-pic.JPEG" className="rounded-full" />
           </div>
         </div>
