@@ -127,7 +127,7 @@ export default function About() {
             {skills.map((skill, index) => (
               <div
                 key={index}
-                className="bg-white text-black rounded px-4 py-2 basis-1/2 md:basis-1/5 xl:basis-1/6"
+                className="bg-white text-black rounded px-4 py-2 basis-1/2 lg:basis-1/5"
               >
                 <div className="flex justify-center">
                   <img src={skill.img} width="80%" />
@@ -136,25 +136,6 @@ export default function About() {
               </div>
             ))}
           </div>
-          {/* <motion.div
-            className="flex flex-wrap justify-center xl:justify-start gap-1"
-            variants={container}
-            initial="visible"
-            whileInView="visible"
-          >
-            {skills.map((skill, index) => (
-              <motion.div
-                variants={item}
-                key={index}
-                className="bg-white text-black rounded px-4 py-2 basis-1/2 md:basis-1/5 xl:basis-1/6"
-              >
-                <div className="flex justify-center">
-                  <img src={skill.img} width="80%" />
-                </div>
-                <h1 className="text-center">{skill.name}</h1>
-              </motion.div>
-            ))}
-          </motion.div> */}
         </div>
       </div>
     </div>

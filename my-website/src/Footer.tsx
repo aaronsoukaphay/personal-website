@@ -1,5 +1,4 @@
 import { BsLinkedin, BsGithub } from "react-icons/bs";
-import { MdEmail } from "react-icons/md";
 
 export default function Footer() {
   return (
@@ -22,7 +21,6 @@ export default function Footer() {
         >
           <BsGithub size={35} />
         </a>
-        <MdEmail size={45} /> <span>{": aaronsoukaphay@gmail.com"}</span>
       </div>
     </div>
   );

@@ -17,7 +17,7 @@ export default function Header() {
               </div>
             </div>
           </div>
-          <div className="fixed right-6">
+          <div>
             <AppDrawer tabs={tabs} header={header} />
           </div>
         </div>
