@@ -6,7 +6,7 @@ export default function Footer() {
       <div className="text-center">
         <div className="text-4xl pb-6">CONTACT</div>
       </div>
-      <div className="flex justify-center py-3">
+      <div className="flex justify-center items-center py-3">
         <a
           className="px-2 hover:text-blue"
           href="https://www.linkedin.com/in/aaron-soukaphay/"

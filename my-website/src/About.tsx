@@ -1,5 +1,3 @@
-import { motion } from "framer-motion";
-
 export default function About() {
   const skills = [
     {
@@ -62,68 +60,82 @@ export default function About() {
       name: "Figma",
       img: "/images/icons/figma.svg",
     },
+    {
+      name: "AWS",
+      img: "/images/icons/aws.svg",
+    },
+    {
+      name: "Vite",
+      img: "/images/icons/vite.svg",
+    },
+    {
+      name: "Canva",
+      img: "/images/icons/canva.svg",
+    },
+    {
+      name: "ESLint",
+      img: "/images/icons/eslint.svg",
+    },
+    {
+      name: "Docker",
+      img: "/images/icons/docker.svg",
+    },
+    {
+      name: "NPM",
+      img: "/images/icons/npm.svg",
+    },
+    {
+      name: "React Router",
+      img: "/images/icons/react-router.svg",
+    },
   ];
 
-  const container = {
-    hidden: { opacity: 1, scale: 0 },
-    visible: {
-      opacity: 1,
-      scale: 1,
-      transition: {
-        delayChildren: 0.3,
-        staggerChildren: 0.1,
-      },
-    },
-  };
-
-  const item = {
-    hidden: { y: 20, opacity: 0 },
-    visible: {
-      y: 0,
-      opacity: 1,
-    },
-  };
-
   return (
-    <div className="h-screen font-mono">
+    <div className="font-mono min-h-screen mb-10">
       <div className="text-center text-4xl pb-6">ABOUT ME</div>
-      <p className="text-center mb-5">
-        Here you will find more information about me, what I do, and my current
-        skills mostly in terms of programming and technology
-      </p>
-      <div className="flex gap-5">
-        <div className="basis-1/2">
-          <div className="text-2xl pb-4">Get to know me!</div>
-          <div className="text-xl">
-            Hello! My journey began in the healthcare industry, but my true
-            passion lies in the dynamic world of web development. Holding a
-            degree in science has instilled in me a strong foundation in
-            research, critical thinking, and problem-solving. This background,
-            combined with my background in web development, brings a unique
-            perspective to my work.
+      <div className="flex flex-wrap justify-center">
+        <div className="basis-full xl:basis-1/2 px-5 pt-6">
+          <div className="text-2xl pb-4 text-center xl:text-start">
+            Get to know me!
+          </div>
+          <div className="text-sm xl:text-lg text-center xl:text-start">
+            Hello! My professional journey began in the healthcare industry but
+            my true passion lies in the dynamic world of web development.
+            Holding a degree in science has instilled in me a strong foundation
+            in research, critical thinking, and problem-solving.
+            <br />
+            <br />
+            This unique synthesis allows me to approach projects with a holistic
+            mindset, understanding not only the technical intricacies but also
+            the human-centric aspects that make a digital experience truly
+            impactful. I believe in crafting solutions that blend functionality
+            with user empathy, ensuring a meaningful impact in the digital
+            landscape.
+            <br />
+            <br />
+            When I'm not coding I like to stay active by going to the gym and
+            playing sports like badminton, pickleball, and basketball. I also
+            enjoy watching movies and tv series as a way to undwind at the end
+            of the day.
           </div>
         </div>
-        <div className="basis-1/2">
-          <div className="text-2xl pb-4">My Skills</div>
-          <motion.div
-            className="flex flex-wrap gap-1"
-            variants={container}
-            initial="hidden"
-            whileInView="visible"
-          >
+        <div className="basis-full xl:basis-1/2 pt-6">
+          <div className="text-2xl pb-4 text-center xl:text-start">
+            My Skills
+          </div>
+          <div className="flex flex-wrap justify-center xl:justify-start gap-1">
             {skills.map((skill, index) => (
-              <motion.div
-                variants={item}
+              <div
                 key={index}
-                className="bg-white text-black rounded px-4 py-2 xl:basis-1/6 md:basis-1/5 sm:basis-1/2"
+                className="bg-white text-black rounded px-4 py-2 basis-1/2 lg:basis-1/5"
               >
                 <div className="flex justify-center">
                   <img src={skill.img} width="80%" />
                 </div>
                 <h1 className="text-center">{skill.name}</h1>
-              </motion.div>
+              </div>
             ))}
-          </motion.div>
+          </div>
         </div>
       </div>
     </div>

@@ -34,7 +34,7 @@ export default function Projects() {
         "React.js",
         "Tailwind CSS",
         "Framer Motion",
-        "GitHub Pages",
+        "AWS Amplify",
       ],
       image: "/images/portfolio-website.png",
       live: "https://main.d2nummp4lg6vcy.amplifyapp.com/#projects",
@@ -43,15 +43,18 @@ export default function Projects() {
   ];
 
   return (
-    <div className="h-screen">
+    <div className="min-h-screen mb-10">
       <h1 className="text-center text-4xl pb-6">PROJECTS</h1>
       <p className="text-center mb-5">
         Here you will find some of the personal and clients projects that I
-        created with each project containing its own case study
+        created with each project containing its own case study.
       </p>
       <div className="flex flex-wrap gap-5 justify-center">
-        {projects.map((project) => (
-          <div className="bg-medgrey rounded project">
+        {projects.map((project, index) => (
+          <div
+            className="bg-medgrey rounded basis-10/12 xl:basis-1/3"
+            key={index}
+          >
             <div className="flex justify-center">
               <img
                 src={project.image}
@@ -62,8 +65,10 @@ export default function Projects() {
               <div className="text-2xl py-3 font-semibold">{project.title}</div>
               <div>{project.description}</div>
               <div className="flex flex-wrap gap-3 py-3">
-                {project.technologies.map((lang: string) => (
-                  <p className="border rounded-2xl py-1 px-2">{lang}</p>
+                {project.technologies.map((lang: string, index: number) => (
+                  <p className="border rounded-2xl py-1 px-2" key={index}>
+                    {lang}
+                  </p>
                 ))}
               </div>
               <div className="text-center flex justify-evenly py-4">
