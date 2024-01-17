@@ -3,7 +3,24 @@ import "./AppDrawer.css";
 import { useState } from "react";
 import { IoMdClose } from "react-icons/io";
 
-export default function AppDrawer({ tabs, header }) {
+type AppDrawerProps = {
+  tabs: string[];
+  header: string[];
+};
+
+type MenuBarProps = {
+  isOpen: boolean;
+  tabs: string[];
+  header: string[];
+  onClick: () => void;
+};
+
+type BackdropProps = {
+  isOpen: boolean;
+  onClick: () => void;
+};
+
+export default function AppDrawer({ tabs, header }: AppDrawerProps) {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
@@ -24,7 +41,7 @@ export default function AppDrawer({ tabs, header }) {
   );
 }
 
-function MenuBar({ isOpen, tabs, header, onClick }) {
+function MenuBar({ isOpen, tabs, header, onClick }: MenuBarProps) {
   const className = isOpen ? "menu-drawer is-open" : "menu-drawer hidden";
   return (
     <div className={className}>
@@ -48,7 +65,7 @@ function MenuBar({ isOpen, tabs, header, onClick }) {
   );
 }
 
-function Backdrop({ isOpen, onClick }) {
+function Backdrop({ isOpen, onClick }: BackdropProps) {
   const className = isOpen ? "menu-shade is-drawn" : "menu-shade";
   return <div className={className} onClick={onClick} />;
 }
